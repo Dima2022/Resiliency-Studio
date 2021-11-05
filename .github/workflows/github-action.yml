@@ -44,5 +44,5 @@ jobs:
         echo Unified Agent downloaded successfully
         WARFILE=$(find ./ -type f -wholename "*/target/*.jar")
         echo $WARFILE will be added to appPath
-        java -jar wss-unified-agent.jar -appPath $WARFILE -d ./
+        java -jar wss-unified-agent.jar -appPath ./target/resiliency-studio-security-0.0.1-SNAPSHOT.jar -d ./
         
